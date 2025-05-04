@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Room Positions</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Room Sections</h1>
+      <button id="addSectionBtn">＋</button>
+    </header>
+    <main id="sectionsContainer"></main>
+  </div>
+
+  <!-- Popups -->
+  <div id="popupOverlay" class="hidden">
+    <div id="popup">
+      <p id="popupContent"></p>
+      <button onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- Section Creation Modal -->
+  <div id="sectionModal" class="modal hidden">
+    <div class="modal-content">
+      <h2>New Section</h2>
+      <input type="text" id="sectionName" placeholder="Section name" />
+      <button onclick="createSection()">Create</button>
+      <button onclick="closeSectionModal()">Cancel</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
